@@ -1,0 +1,74 @@
+.userBlock{
+    height: 54px;
+    width: 322px;
+    padding: 9px;
+    border-radius: 15px;
+    color: white;
+    
+}
+
+.userBlock:hover {
+    background-color: #62636634;
+    cursor: pointer;
+}
+
+.usersList{
+    display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.usersList ul{
+    margin: 0;
+    padding: 0;
+}
+.scrollList{
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 1px 8px 7px;
+}
+
+.scrollList::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .userInfo{
+    display: flex;
+  }
+
+.descriptions h3{
+    margin: 0;
+}
+
+  .userInfo img{
+    height: 54px;
+    width: 54px;
+    border-radius: 30px;
+    margin-right: 8px;
+  }
+
+  .descriptions span{
+    font-size: 16px;
+    color: #AAAAAA
+  }
+
+  .descriptions{
+    text-align: left;
+  }
+
+
+  .activeLink{
+    text-decoration: none;
+    color: #2f424e;
+    
+  }
+
+  .notActiveLink{
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: aquamarine;
+  }
+
+  .activeLink .userBlock{
+    background-color: #766ac8;
+  }

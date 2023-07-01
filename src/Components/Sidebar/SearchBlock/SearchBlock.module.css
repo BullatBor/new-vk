@@ -1,0 +1,9 @@
+.form{
+    display: flex;
+    height: 40px;
+    padding: 6px 13px 8px;
+}
+
+.searchBlock{
+    background-color: #212121;
+}

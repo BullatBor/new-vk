@@ -1,0 +1,36 @@
+.searchElement input{
+    width: 187px;
+    height: 27px;
+    padding: 6px 41px 7px 43px;
+    border-radius: 15px;
+    background-color: #2c2c2c;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    outline-color: #8774e1;
+}
+
+.searchElement{
+    margin-left: 13px;
+}
+
+.messageBlock input{
+    width: calc(100vh - 90px);
+    line-height: 1.3125;
+    padding: 17.5px 0px 17.5px 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-color: #2c2c2c;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;;
+}
+
+.messageBlock input:focus{
+    border: 0;
+    outline: none;
+}
+

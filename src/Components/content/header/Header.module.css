@@ -1,0 +1,37 @@
+.header{
+    background-color: #212121;
+    color: white;
+}
+
+.headerInfo{
+    height: 40px;
+    padding: 8px 13px 8px 24px;
+    display: flex;
+    cursor: pointer;
+}
+
+.headerInfo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    margin-right: 0.625rem;
+}
+
+.headerInfo h3{
+    margin: 0;
+    color: white;
+}
+
+.title{
+    text-align: left;
+    width: 170px;
+    position: relative;
+    display: block;
+}
+.title span{
+    font-size: 14px;
+    color: #AAAAAA;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    
+}

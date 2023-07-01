@@ -1,0 +1,26 @@
+.dialog{
+    background-color: rgb(70, 87, 81);
+    height: calc(100vh - 50px);
+    width: 100%;
+    position: relative;
+    flex: 1;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.MessageInput{
+    display: inline-block;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.dialogContainer{
+    height: 100%;
+}
+
+.form{
+    display: flex;
+    margin-right: 15px;
+}
