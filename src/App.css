@@ -21,7 +21,7 @@
   background-color: rgb(70, 87, 81);
   position: relative;
   grid-area: second-column;
-  height: 100vh;
+  height: 100%;
 }
 
 

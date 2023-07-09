@@ -1,5 +1,4 @@
 .dialog{
-    background-color: rgb(70, 87, 81);
     height: calc(100vh - 50px);
     width: 100%;
     position: relative;
@@ -18,6 +17,8 @@
 
 .dialogContainer{
     height: 100%;
+    background-size: cover;
+    background-image: url("https://fons.pibig.info/uploads/posts/2023-06/1686041788_fons-pibig-info-p-strannii-fon-vkontakte-17.jpg");
 }
 
 .form{

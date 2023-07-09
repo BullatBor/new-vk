@@ -4,9 +4,17 @@
     height: 100%;
 }
 
+.defaultContent{
+    background-color: aqua;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("https://fons.pibig.info/uploads/posts/2023-06/1686041788_fons-pibig-info-p-strannii-fon-vkontakte-17.jpg");
+}
+
 .dialogPage{
     width: 100%;
     height: 100%;
+    
 }
 
 .profilePage{

@@ -4,14 +4,12 @@ import s from "./Dialog.module.css"
 import {setProfileVisible} from "../../../store/profileReducer"
 import { Dialog} from './Dialog'
 
-class DialogClass extends React.Component {
-  render() {
+const  DialogCont = (props) => {
     return (
       <div className={s.dialogContainer}>
-        <Dialog setProfileVisible={this.props.setProfileVisible}/>
+        <Dialog setProfileVisible={props.setProfileVisible}/>
       </div>
     )
-  }
 }
 
 const mapStateToProps = (state) => {
@@ -21,4 +19,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export let DialogContainer = connect(mapStateToProps, {setProfileVisible})(DialogClass);
+export let DialogContainer = connect(mapStateToProps, {setProfileVisible})(DialogCont);

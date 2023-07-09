@@ -1,37 +1,53 @@
-.header{
+.header {
     background-color: #212121;
     color: white;
 }
 
-.headerInfo{
+.headerInfo {
     height: 40px;
     padding: 8px 13px 8px 24px;
     display: flex;
     cursor: pointer;
 }
 
-.headerInfo img{
+.headerImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    margin-right: 0.625rem;
+    background-color: #faa774;
+    font-size: 21px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerInfo img {
     width: 40px;
     height: 40px;
     border-radius: 25px;
     margin-right: 0.625rem;
 }
 
-.headerInfo h3{
+
+
+.headerInfo h3 {
     margin: 0;
     color: white;
 }
 
-.title{
+.title {
     text-align: left;
     width: 170px;
     position: relative;
     display: block;
 }
-.title span{
+
+.title span {
     font-size: 14px;
     color: #AAAAAA;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: absolute;
-    
+
 }

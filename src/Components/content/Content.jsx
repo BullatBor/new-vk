@@ -1,41 +1,41 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import {setProfileVisible} from "../../store/profileReducer"
+import { setProfileVisible } from "../../store/profileReducer"
 import s from "./Content.module.css"
 import { DialogContainer } from './dialog/DialogContainer'
 import { HeaderContainer } from './header/HeaderContainer'
 import { getUserInfoThunkCreator } from "./../../store/usersReducer"
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { Profile } from '../profile/Profile'
+import { useEffect } from 'react'
+import { Header } from './header/Header'
 
-export class Content extends Component {
-  componentDidMount() {
-    this.props.getUserInfoThunkCreator(this.props.router.params.userId);
-  }
-  componentDidUpdate(prevProps, prevState) {
-    if(this.props.router.params.userId != prevProps.router.params.userId){
-      this.props.getUserInfoThunkCreator(this.props.router.params.userId);
-    }  
-}
+const Content = (props) => {
+  useEffect(() => {
+    props.getUserInfoThunkCreator(props.router.params.userId)
+  }, [props.router.params.userId])
 
-  render() {
-    return (
-      this.props.isFetching &&
+  return (
+    props.isFetching
+      ?
       <div>
         <div className={s.content}>
           <div className={s.dialogPage}>
-            <HeaderContainer user={this.props.userInfo}/>
+            <Header user={props.userInfo} setProfileVisible={props.setProfileVisible} />
             <DialogContainer />
           </div>
           {
-            this.props.profileVisible &&
-            <Profile user={this.props.userInfo} setProfileVisible={this.props.setProfileVisible}/>
+            props.profileVisible &&
+            <Profile user={props.userInfo} setProfileVisible={props.setProfileVisible} />
           }
         </div>
       </div>
-    )
-  }
+      :
+      <div className={s.defaultContent}>
+      <span>ssdfa</span>
+      </div>
+  )
 }
 
 const mapStateToProps = (state) => ({
